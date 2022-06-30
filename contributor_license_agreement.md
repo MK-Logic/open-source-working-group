@@ -1,4 +1,4 @@
-Z-WAVE ALLIANCE OPEN SOURCE PROJECT SOFTWARE GRANT AND INDIVIDUAL CONTRIBUTOR LICENSE AGREEMENT ("AGREEMENT")
+# Z-WAVE ALLIANCE OPEN SOURCE PROJECT SOFTWARE GRANT AND INDIVIDUAL CONTRIBUTOR LICENSE AGREEMENT ("AGREEMENT")
 
 This Software Grant and Individual Contributor License Agreement is based on the BSD-3 Clause License and 
 Individual Contributor License Agreement.
@@ -15,7 +15,7 @@ benefit or inconsistent with its nonprofit status and bylaws in effect at the ti
 the license granted herein to the Alliance and recipients of software distributed by the Alliance, You reserve all 
 right, title, and interest in and to Your Contributions.
 
-1.	Definitions.
+## 1.	Definitions.
 
 "You" (or "Your") shall mean the copyright owner or legal entity authorized by the copyright owner that is making 
 this Agreement with the Alliance. For legal entities, the entity making a Contribution and all other entities that 
@@ -35,14 +35,14 @@ marked or otherwise designated in writing by You as "Not a Contribution."
 
 "Specification(s)" shall have the meaning set forth in the Alliance's Intellectual Property Rights Policy.
 
-2.	Grant of Copyright License. 
+## 2.	Grant of Copyright License. 
 
 Subject to the terms and conditions of this Agreement, You hereby grant to the Alliance 
 and to recipients of software distributed by the Alliance a perpetual, worldwide, non-exclusive, no-charge, royalty-free, 
 irrevocable copyright license to reproduce, prepare derivative works of, publicly display, publicly perform, sublicense, 
 and distribute Your Contributions and such derivative works.
 
-3.	Grant of Patent License. 
+## 3.	Grant of Patent License. 
 
 Subject to the terms and conditions of this Agreement, You hereby grant to the Alliance and 
 to recipients of software distributed by the Alliance a perpetual, worldwide, non-exclusive, no-charge, royalty-free, 
@@ -54,7 +54,7 @@ counterclaim in a lawsuit) alleging that Your Contribution, or the Work to which
 or contributory patent infringement, then any patent licenses granted to that entity under this Agreement for that 
 Contribution or Work shall terminate as of the date such litigation is filed.  
 
-Representations:
+## Representations:
 
 4.	You represent that You are legally entitled to grant the above license. If Your employer(s) has rights to intellectual 
 property that You create that includes Your Contributions, You represent that You have received permission to make 
@@ -66,7 +66,7 @@ others).  You represent that Your Contribution submissions include complete deta
 restriction (including, but not limited to, related patents and trademarks) of which You are personally aware and which are 
 associated with any part of Your Contributions.
 
-Support:
+## Support:
 
 6.	You are not expected to provide support for Your Contributions, except to the extent You desire to provide support. You 
 may provide support for free, for a fee, or not at all. Unless required by applicable law or agreed to in writing, You 
@@ -74,14 +74,14 @@ provide Your Contributions on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS
 including, without limitation, any warranties or conditions of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A 
 PARTICULAR PURPOSE.
 
-Submission on behalf of others:
+## Submission on behalf of others:
 
 7.	Should You wish to submit work that is not Your original creation, You may submit it to the Alliance separately from any 
 Contribution, identifying the complete details of its source and of any license or other restriction (including, but not 
 limited to, related patents, trademarks, and license agreements) of which You are personally aware, and conspicuously marking 
 the work as "Submitted on behalf of a third-party: [named here]".
 
-Notification of changes:
+## Notification of changes:
 
 8.	You agree to notify the Alliance of any facts or circumstances of which You become aware that would make these 
 representations inaccurate in any respect.
