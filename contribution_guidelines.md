@@ -2,36 +2,42 @@
 
 Want to contribute? Great! First, read this page (including the small print at the end). By submitting a pull request, 
 you represent that you have the right to license your contribution to the community, and agree by submitting the patch 
-that your contributions are licensed under the BSD-3 license. Before submitting the pull request, please make sure 
-you have tested your changes and that they follow the project guidelines for contributing code.
-
-## Contributing as an Open Source Contributor
-
-As an open source contributor you can report bugs and request features in the Issue Tracker, as well as contribute bug 
-fixes and features that do not impact the specification as a pull request. For example: ports to add APIs to alternative 
-programming languages (e.g. Java, JS), hardware ports, or an optimized implementation of existing functionality. For 
-features that impact the specification, please join the ORGANIZATION work group within the Alliance. The requirements to 
-become an open source contributor of the Repository are:
-
-- Agree to the Code of Conduct
-- Agree to the License
-- Have signed the CLA
+that your contributions are licensed under the BSD-3 license. Before submitting the pull request, you must have tested 
+your changes and check that they follow the project guidelines for contributing code.
 
 ## Contributing as a Working Group Member
 
-As a participant of the Working Group, you can attend Working Group meetings, propose changes to the specification, and 
-contribute code for approved updates to the specification. The requirements to become a member of the Repository are:
+As a participant of the Working Group, you can attend Working Group meetings and propose changes to the work group 
+documents. 
+You can report bugs and request features in the Issue Tracker, as well as contribute bug 
+fixes and features that do not impact the specification as a pull request. For example: ports to add APIs to alternative 
+programming languages (e.g. Java, JS), hardware ports, or an optimized implementation of existing functionality. For 
+features that impact the specification, please join the Core Stack or Application work group within the Alliance.
+The requirements to become a member of the Repositories are:
 
 - Must be a Participant member or higher of the Alliance
 - Must be a Working Group member
-- Have signed the Alliance CLA
+- Have signed the Alliance DCO
+- Agree to the Code of Conduct
+- Agree to the License
 - Have approval from your company's official approver
+
+## Contributer Types
+
+Group member - Create pull requests, Review pull requests, Create issues
+Community Leader - Create pull requests, Review pull requests, Create issues Merge pull requests
+1 Development Lead - Create pull requests, Review pull requests, Merge pull requests, Bypass review requirements
+1 Vice Lead (optional) - Create pull requests, Review pull requests, Merge pull requests, Bypass review requirements
+
+The Development lead is appointed by the Community Leaders, a Development Lead must have been a Community Leader for 
+at least 1 year.
 
 ## Bugs
 
-If you find a bug in the source code, you can help us by submitting a GitHub Issue. The best bug reports provide a 
-detailed description of the issue and step-by-step instructions for predictably reproducing the issue. Even better, 
-you can submit a Pull Request with a fix.
+If you find a bug in the source code, you must submit a GitHub Issue. The bug report must contain a detailed 
+description of the issue. A step-by-step instruction for predictably reproducing the issue should be added if 
+possible. Even better, you can also submit a Pull Request with a fix.
+If possible, the pull request should implement the relevant unit or system tests for testing that the bug is fixed.
 
 ## New Features
 
@@ -43,6 +49,22 @@ consider the scope of the new feature:
   allow us to better coordinate our efforts and minimize duplicated effort.
 - Small feature: can be implemented and directly submitted as a Pull Request.
 
+Make sure that all new features are covered by unit or system tests, with at least 80% line coverage. If this is not possible it must be clearly stated in the pull request with an explanation of why the line coverage is lower.
+
+Be aware that new features might require specification work. Community Leaders can request that a feature is added to a specification before it is merged.
+
+## API Changes
+
+API changes will often have a major impact on other projects or members using the code and should therefore only be used as a last resort. Pull requests containing a API change should clearly state that this is a API change and contain a description of the reason for the change and the impact of the API change. Reviewers must pay extra attention to pull requests that breaks backwards compatibility of an API to ensure that the change is necessary. 
+ 
+### API's
+
+The following files are considered as being API's
+
+z-wave-stack/PAL/inc/*.h
+z-wave-stack/ZWave/API/*.h
+z-wave-stack/Apps/SerialAPI/*
+
 # Contributing Code
 
 The open source project follows the "Fork-and-Pull" model for accepting contributions.
@@ -51,7 +73,8 @@ The open source project follows the "Fork-and-Pull" model for accepting contribu
 
 Setup your GitHub fork and continuous-integration services:
 
-1.	Fork the [ZWA Open Source Repository](https://github.com/Z-Wave-Alliance/OSWG.git) 
+1.	Fork the: [ZWA Protocol Stack](https://github.com/Z-Wave-Alliance/z-wave-stack.git) and 
+    [ZWA Test System](https://github.com/Z-Wave-Alliance/z-wave-test-system.git) 
     by clicking "Fork" on the web UI.
     
 2.	All contributions must pass all checks and reviews to be accepted.
@@ -60,10 +83,12 @@ Setup your GitHub fork and continuous-integration services:
 
 ```bash
 # Clone your fork
-git clone git@github.com:Z-Wave-Alliance/OSWG.git
+git clone git@github.com:USERNAME/z-wave-stack.git
+git clone git@github.com:USERNAME/z-wave-test-system.git
 
 # Configure upstream alias
-git remote add upstream git@github.com:Z-Wave-Alliance/OSWG.git
+git remote add upstream git@github.com:Z-Wave-Alliance/z-wave-stack.git
+git remote add upstream git@github.com:Z-Wave-Alliance/z-wave-test-system.git
 ```
 
 ## Submitting a Pull Request
@@ -91,6 +116,14 @@ git commit
 ```
 
 This will open up a text editor where you can craft your commit message.
+
+### Commit Message
+
+The commit message must be in the below format:
+
+<github issue>: <brief description>
+
+<detailed description>
 
 ### Upstream Sync and Clean Up
 
@@ -147,6 +180,10 @@ Once you've validated the CI results, go to the page for your fork on GitHub, se
 the pull request button. If you need to make any adjustments to your pull request, just push the updates to GitHub. Your 
 pull request will automatically track the changes on your development branch and update.
 
+### Code Analysis
+
+The Z-Wave source code is not safety certified and currently the Z-Wave Alliance has no ambitions to do any safety certification. Therefore there is no static analysis tools in place to ensure that a PR is in compliance with a specific safety standard.
+
 ### Merge Requirements
 - Github Workflows pass
 - Builds pass
@@ -154,7 +191,7 @@ pull request will automatically track the changes on your development branch and
 - Linking passes
 - Code style passes
 
-When can I merge? After these have been satisfied, a reviewer will merge the PR into master
+When can I merge? After these have been satisfied, a Comminity Leader will merge the PR into master
 
 ### Documentation
 
@@ -163,7 +200,7 @@ author and format documentation for contribution.
 
 ## Merge Processes
 
-Merges require at least 2 approvals from unique require-reviewers lists, and all CI tests passing.
+Merges require at least 2 approvals from Community Leaders, and all CI tests passing.
 
 ### Shorter Reviews
 
@@ -173,9 +210,9 @@ A separate "fast track" label will be created that will only require a single ch
 shall only be set by the Development Lead, and/or Vice Lead (unless they’re both unavailable, in which case a 
 replacement can be temporarily appointed)
 
-"Day" here means "business day" (i.e. PRs on friday do not get fast-tracked faster).
-
 ### Fast track types
+
+"Day" here means "business day" (i.e. PRs on friday do not get fast-tracked faster).
 
 #### Trivial changes
 
@@ -206,17 +243,16 @@ Small changes or changes that do not affect the main functionality of the code c
 
 Larger functionality changes are allowed to be fast tracked with these requirements/restrictions:
 
-- Require at least 1 day to have passed since the creation of the PR
+- Require at least 3 day to have passed since the creation of the PR
 - Require at least 1 checkmark from someone familiar with the code or problem space
-  - This requirement shall be dropped after a PR is 3 days old with stale or no feedback.
+  - This requirement shall be dropped after a PR is 7 days old with stale or no feedback.
 - Code is sufficiently covered by automated tests (or impossible to automatically test with a very 
   solid reason)
 
 Fast tracking these changes will involve resolving any obviously 'resolved' comments (judgment call 
 here: were they replied to or addressed) and merging the change.
 
-Any "request for changes" marker will always be respected unless obviously resolved (i.e. author marked 
+Any "request for changes" marker on a PR will always be respected unless obviously resolved (i.e. author marked 
 "requesting changes because of X and X was done in the PR")
-
-- This requirement shall be dropped after a PR is 3 days old with stale or no feedback.
+  - This requirement shall be dropped after a PR is 7 days old with stale or no feedback.
 
