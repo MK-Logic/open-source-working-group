@@ -24,10 +24,10 @@ The requirements to become a member of the Repositories are:
 
 ## Contributer Types
 
-Group member - Create pull requests, Review pull requests, Create issues
-Community Leader - Create pull requests, Review pull requests, Create issues Merge pull requests
-1 Development Lead - Create pull requests, Review pull requests, Merge pull requests, Bypass review requirements
-1 Vice Lead (optional) - Create pull requests, Review pull requests, Merge pull requests, Bypass review requirements
+Group member - Create pull requests, Review pull requests, Create issues<br>
+Community Leader - Create pull requests, Review pull requests, Create issues Merge pull requests<br>
+Development Lead (only 1)- Create pull requests, Review pull requests, Merge pull requests, Bypass review requirements<br>
+Vice Lead (optional) - Create pull requests, Review pull requests, Merge pull requests, Bypass review requirements<br>
 
 The Development lead is appointed by the Community Leaders, a Development Lead must have been a Community Leader for 
 at least 1 year.
@@ -61,8 +61,8 @@ API changes will often have a major impact on other projects or members using th
 
 The following files are considered as being API's
 
-z-wave-stack/PAL/inc/*.h
-z-wave-stack/ZWave/API/*.h
+z-wave-stack/PAL/inc/*.h<br>
+z-wave-stack/ZWave/API/*.h<br>
 z-wave-stack/Apps/SerialAPI/*
 
 # Contributing Code
@@ -121,9 +121,9 @@ This will open up a text editor where you can craft your commit message.
 
 The commit message must be in the below format:
 
-<github issue>: <brief description>
+\<github issue\>: \<brief description\><br>
 
-<detailed description>
+\<detailed description\><br>
 
 ### Upstream Sync and Clean Up
 
