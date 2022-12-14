@@ -67,6 +67,6 @@ When making a release of the Z-Wave source it is important that a high quality o
     4. System test
     5. Code Style Analysis
 4. (Optional) Submit the release for test at a Z-Wave test house
-5. Get approval from at least one silicon or stack vendor that has run the release through their internal test
+5. (Optional) Get approval from at least one silicon or stack vendor that has run the release through their internal test
 6. Tag the release in github
 7. Make a release note with highlights of changes since last release
