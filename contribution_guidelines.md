@@ -120,10 +120,18 @@ This will open up a text editor where you can craft your commit message.
 ### Commit Message
 
 The commit message must be in the below format:
+```
+GH-<issue id>: <brief description>
 
-\<github issue\>: \<brief description\><br>
+<detailed description>
+```
 
-\<detailed description\><br>
+Example of commit message:
+```
+GH-123: Updated some file
+
+More detailed description.
+```
 
 ### Upstream Sync and Clean Up
 
