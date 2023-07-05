@@ -22,7 +22,7 @@ The requirements to become a member of the Repositories are:
 - Agree to the License
 - Have approval from your company's official approver
 
-## Contributer Types
+## Contributor Types
 
 Group member - Create pull requests, Review pull requests, Create issues<br>
 Community Leader - Create pull requests, Review pull requests, Create issues Merge pull requests<br>
@@ -99,7 +99,7 @@ For each new feature, create a working branch:
 
 ```bash
 # Create a working branch for your new feature
-git branch --track <branch-name> origin/master
+git branch --track <branch-name> origin/main
 
 # Checkout the branch
 git checkout <branch-name>
@@ -138,17 +138,17 @@ More detailed description.
 Prior to submitting your pull request, you might want to do a few things to clean up your branch and make it as simple 
 as possible for the original repository's maintainer to test, accept, and merge your work.
 
-If any commits have been made to the upstream master branch, you should rebase your development branch so that merging 
+If any commits have been made to the upstream main branch, you should rebase your development branch so that merging 
 it will be a simple fast-forward that won't require any conflict resolution work.
 
 ```bash
-# Fetch upstream master and merge with your repository's master branch
-git checkout master
-git pull upstream master
+# Fetch upstream main and merge with your repository's main branch
+git checkout main
+git pull upstream main
 
 # If there were any new commits, rebase your development branch
 git checkout <branch-name>
-git rebase master
+git rebase main
 ```
 
 Now, it may be desirable to squash some of your smaller commits down into a small number of larger more cohesive commits. 
@@ -157,7 +157,7 @@ You can do this with an interactive rebase:
 ```bash
 # Rebase all commits on your development branch
 git checkout <branch-name>
-git rebase -i master
+git rebase -i main
 ```
 
 This will open up a text editor where you can specify which commits to squash.
@@ -199,7 +199,7 @@ The Z-Wave source code is not safety certified and currently the Z-Wave Alliance
 - Linking passes
 - Code style passes
 
-When can I merge? After these have been satisfied, a Comminity Leader will merge the PR into master
+When can I merge? After these have been satisfied, a Community Leader will merge the PR into main
 
 ### Documentation
 
