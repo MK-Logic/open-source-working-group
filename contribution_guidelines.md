@@ -56,7 +56,10 @@ Be aware that new features might require specification work. Community Leaders c
 ## API Changes
 
 API changes will often have a major impact on other projects or members using the code and should therefore only be used as a last resort. Pull requests containing a API change should clearly state that this is a API change and contain a description of the reason for the change and the impact of the API change. Reviewers must pay extra attention to pull requests that breaks backwards compatibility of an API to ensure that the change is necessary. 
- 
+
+Developers are expected to update NEWS.md file with reference to the justification (or motivation) of the "breaking change".
+This file should be also scrutinized by API users when updating a component, it will help them to adapt their client code accordingly.
+
 ### API's
 
 The following files are considered as being API's
