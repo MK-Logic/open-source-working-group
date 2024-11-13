@@ -21,4 +21,31 @@ Submit an Issue which contains
 - Sufficient detail as to what the issue addresses
 - Appropriate labels (these will be reviewed by OSWG and may be changed)
 - OSWG will assign the issue to the affected project the Issue pertains to
+```
 
+# Repositories
+
+The Open Source Working Group maintains the following repositories:
+
+## Z-Wave stack and apps
+- https://github.com/Z-Wave-Alliance/z-wave-stack
+- https://github.com/Z-Wave-Alliance/z-wave-stack-docker
+- https://github.com/Z-Wave-Alliance/z-wave-stack-binaries
+- https://github.com/Z-Wave-Alliance/z-wave-unit-test-framework
+
+## Automated testing
+- https://github.com/Z-Wave-Alliance/z-wave-test-system (Python based)
+- https://github.com/Z-Wave-Alliance/z-wave-automated-test-system (ZATS, C# based)
+
+## PC Tools
+- https://github.com/Z-Wave-Alliance/z-wave-pc-controller
+- https://github.com/Z-Wave-Alliance/z-wave-pc-zniffer
+- https://github.com/Z-Wave-Alliance/z-wave-xml-tools
+- https://github.com/Z-Wave-Alliance/z-wave-tools-core
+
+## Miscellaneous
+- https://github.com/Z-Wave-Alliance/z-wave-blobs
+- https://github.com/Z-Wave-Alliance/z-wave-security
+- https://github.com/Z-Wave-Alliance/oswg-template-repo
+- https://github.com/Z-Wave-Alliance/z-wave-tools (unused, limited access, delete?)
+- https://github.com/Z-Wave-Alliance/qr_code_tool (who maintains this?)
