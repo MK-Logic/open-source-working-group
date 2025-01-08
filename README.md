@@ -47,5 +47,7 @@ The Open Source Working Group maintains the following repositories:
 - https://github.com/Z-Wave-Alliance/z-wave-blobs
 - https://github.com/Z-Wave-Alliance/z-wave-security
 - https://github.com/Z-Wave-Alliance/oswg-template-repo
-- https://github.com/Z-Wave-Alliance/z-wave-tools (unused, limited access, delete?)
 - https://github.com/Z-Wave-Alliance/qr_code_tool (who maintains this?)
+
+## Archived
+- https://github.com/Z-Wave-Alliance/z-wave-tools (replaced by PC Tools repos)
