@@ -136,6 +136,20 @@ GH-123: Updated some file
 More detailed description.
 ```
 
+### License and Copyright in files
+
+All files must contain a license statement in the header in SPDX format. The license statement must look like this:
+```
+SPDX-License-Identifier: BSD-3-Clause
+```
+prepended with a comment identifier that matches the format of the file.
+
+The file header must also contain a copyright statement in SPDX format as well. The default copyright statement that must be used is:
+```
+SPDX-FileCopyrightText: Z-Wave-Alliance <https://z-wavealliance.org/>
+```
+It is allowed to also add your companys own copyright to a new or changed file, but it is not recommended to do so as it can result in long file header with multiple copyright holders.
+
 ### Upstream Sync and Clean Up
 
 Prior to submitting your pull request, you might want to do a few things to clean up your branch and make it as simple 
