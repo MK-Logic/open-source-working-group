@@ -148,7 +148,7 @@ The file header must also contain a copyright statement in SPDX format as well. 
 ```
 SPDX-FileCopyrightText: Z-Wave-Alliance <https://z-wavealliance.org/>
 ```
-It is allowed to also add your companys own copyright to a new or changed file, but it is not recommended to do so as it can result in long file header with multiple copyright holders.
+It is allowed to also add your company's original copyright to a new or changed file, but it is not recommended to do so as it can result in long file header with multiple copyright holders.
 
 ### Upstream Sync and Clean Up
 
