@@ -31,7 +31,6 @@ The Open Source Working Group maintains the following repositories:
 - https://github.com/Z-Wave-Alliance/z-wave-stack
 - https://github.com/Z-Wave-Alliance/z-wave-stack-docker
 - https://github.com/Z-Wave-Alliance/z-wave-stack-binaries
-- https://github.com/Z-Wave-Alliance/z-wave-unit-test-framework
 
 ## Automated testing
 - https://github.com/Z-Wave-Alliance/z-wave-test-system (Python based)
@@ -45,9 +44,10 @@ The Open Source Working Group maintains the following repositories:
 
 ## Miscellaneous
 - https://github.com/Z-Wave-Alliance/z-wave-blobs
-- https://github.com/Z-Wave-Alliance/z-wave-security
 - https://github.com/Z-Wave-Alliance/oswg-template-repo
 - https://github.com/Z-Wave-Alliance/qr_code_tool (who maintains this?)
 
 ## Archived
 - https://github.com/Z-Wave-Alliance/z-wave-tools (replaced by PC Tools repos)
+- https://github.com/Z-Wave-Alliance/z-wave-unit-test-framework
+- https://github.com/Z-Wave-Alliance/z-wave-security
