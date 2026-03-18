@@ -122,18 +122,61 @@ This will open up a text editor where you can craft your commit message.
 
 ### Commit Message
 
-The commit message must be in the below format:
-```
-GH-<issue id>: <brief description>
+A commit message must comply with the following set of rules:
 
-<detailed description>
+1. The commit message MUST comply with https://www.conventionalcommits.org/en/v1.0.0/
+2. The body MUST describe WHY the change was made, in addition to other relevant context.
+3. The footer MUST reference relevant issues, if any.
+4. The footer MAY reference PRs, if relevant.
+
+For item 3 and 4:
+    - As URLs, if possible.
+    - The references can be internal to a contributor as well as external.
+    - Use https://dep-team.pages.debian.net/deps/dep3/ based on https://git-scm.com/docs/git-interpret-trailers.
+
+Supported commit types:
+
+- build
+- chore
+- ci (continuous integration)
+- docs (documentation)
+- feat (feature)
+- fix
+- perf (performance)
+- refactor
+- style
+- test
+
+Supported commit scopes might be found in CONTRIBUTING.md in each repository maintained by OSWG.
+If no scopes are defined in a repository, do not use a scope.
+
+Example based on https://github.com/Z-Wave-Alliance/z-wave-stack/pull/887:
+```
+feat(zaf): Updated CC Firmware Update MD to version 8
+
+Upgrading to version 8 adds support for new error codes.
+
+Origin: https://github.com/Z-Wave-Alliance/z-wave-stack/pull/887
+Relates-to: https://github.com/Z-Wave-Alliance/AWG/blob/main/source/management_command_classes/command_class_definitions/firmware_update_command_class_version_8.rst
 ```
 
-Example of commit message:
+Example from https://github.com/Z-Wave-Alliance/z-wave-test-system/pull/139
 ```
-GH-123: Updated some file
+fix: Correctly parse frames with field between length and data
 
-More detailed description.
+In CC Firmware Update Meta Data the Firmware Md Report command has
+a field in between the "Number of Firmware Targets" field and
+the variant group that contains the firmware IDs. The "Number of
+Firmware Targets" serves as the length of the variant group.
+
+The existing logic would not take the length of the in-between
+field(s) into consideration but simply assume a one-byte field
+resulting in a wrong offset when trying to get the value of
+"Number of Firmware Targets" during parsing.
+
+This fix loops through any fields in between the length and the
+data and includes the field lengths in the calculation of the
+offset.
 ```
 
 ### License and Copyright in files
