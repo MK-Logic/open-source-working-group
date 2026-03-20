@@ -49,20 +49,26 @@ consider the scope of the new feature:
   allow us to better coordinate our efforts and minimize duplicated effort.
 - Small feature: can be implemented and directly submitted as a Pull Request.
 
-Make sure that all new features are covered by unit or system tests, with at least 80% line coverage. If this is not possible it must be clearly stated in the pull request with an explanation of why the line coverage is lower.
+Make sure that all new features are covered by unit or system tests, with at least 80% line coverage. If this is not
+possible it must be clearly stated in the pull request with an explanation of why the line coverage is lower.
 
-Be aware that new features might require specification work. Community Leaders can request that a feature is added to a specification before it is merged.
+Be aware that new features might require specification work. Community Leaders can request that a feature is added to a
+specification before it is merged.
 
 ## API Changes
 
-API changes will often have a major impact on other projects or members using the code and should therefore only be used as a last resort. Pull requests containing a API change should clearly state that this is a API change and contain a description of the reason for the change and the impact of the API change. Reviewers must pay extra attention to pull requests that breaks backwards compatibility of an API to ensure that the change is necessary. 
+API changes will often have a major impact on other projects or members using the code and should therefore only be used
+as a last resort. Pull requests containing a API change should clearly state that this is a API change and contain a
+description of the reason for the change and the impact of the API change. Reviewers must pay extra attention to pull
+requests that breaks backwards compatibility of an API to ensure that the change is necessary. 
 
 Developers are expected to update NEWS.md file with reference to the justification (or motivation) of the "breaking change".
-This file should be also scrutinized by API users when updating a component, it will help them to adapt their client code accordingly.
+This file should be also scrutinized by API users when updating a component, it will help them to adapt their client
+code accordingly.
 
-### API's
+### APIs
 
-The following files are considered as being API's
+The following files are considered as being APIs
 
 z-wave-stack/PAL/inc/*.h<br>
 z-wave-stack/ZWave/API/*.h<br>
@@ -82,7 +88,7 @@ Setup your GitHub fork and continuous-integration services:
 
 2.	All contributions must pass all checks and reviews to be accepted.
 
-## Setup your local development environment:
+## Setup Your Local Development Environment:
 
 ```bash
 # Clone your fork
@@ -179,19 +185,24 @@ data and includes the field lengths in the calculation of the
 offset.
 ```
 
-### License and Copyright in files
+### License and Copyright in Files
 
-All files must contain a license statement in the header in SPDX format. The license statement must look like this:
+All files must contain a license statement in the header in SPDX format.
+If no header can be used, a parallel license file must be used, e.g., `ZatsBuild.sln.license` for `ZatsBuild.sln`.
+
+The license statement must look like this:
 ```
 SPDX-License-Identifier: BSD-3-Clause
 ```
 prepended with a comment identifier that matches the format of the file.
 
-The file header must also contain a copyright statement in SPDX format as well. The default copyright statement that must be used is:
+The file header must also contain a copyright statement in SPDX format.
+The default copyright statement that must be used is:
 ```
-SPDX-FileCopyrightText: Z-Wave-Alliance <https://z-wavealliance.org/>
+SPDX-FileCopyrightText: Z-Wave-Alliance <https://z-wavealliance.org>
 ```
-It is allowed to also add your company's original copyright to a new or changed file, but it is not recommended to do so as it can result in long file header with multiple copyright holders.
+It is allowed to additionally add your company's original copyright to a new or changed file,
+but it is not recommended to do so, as it can result in a long file header with multiple copyright holders.
 
 ### Upstream Sync and Clean Up
 
@@ -275,7 +286,9 @@ pull request will automatically track the changes on your development branch and
 
 ### Code Analysis
 
-The Z-Wave source code is not safety certified and currently the Z-Wave Alliance has no ambitions to do any safety certification. Therefore there is no static analysis tools in place to ensure that a PR is in compliance with a specific safety standard.
+The Z-Wave source code is not safety certified and currently the Z-Wave Alliance has no ambitions to do any safety
+certification. Therefore there is no static analysis tools in place to ensure that a PR is in compliance with a
+specific safety standard.
 
 ### Merge Requirements
 - Github Workflows pass
@@ -303,11 +316,11 @@ A separate "fast track" label will be created that will only require a single ch
 shall only be set by the Development Lead, and/or Vice Lead (unless they’re both unavailable, in which case a
 replacement can be temporarily appointed)
 
-### Fast track types
+### Fast Track Types
 
 "Day" here means "business day" (i.e. PRs on friday do not get fast-tracked faster).
 
-#### Trivial changes
+#### Trivial Changes
 
 Small changes or changes that do not affect the main functionality of the code can be fast tracked immediately. Examples:
 
@@ -332,7 +345,7 @@ Small changes or changes that do not affect the main functionality of the code c
 - Most changes to existing docker files (pulling new versions, reorganizing)
 - Most changes to new dockerfile version in workflows
 
-#### Fast track changes
+#### Fast Track Changes
 
 Larger functionality changes are allowed to be fast tracked with these requirements/restrictions:
 
@@ -349,3 +362,7 @@ Any "request for changes" marker on a PR will always be respected unless obvious
 "requesting changes because of X and X was done in the PR")
   - This requirement shall be dropped after a PR is 7 days old with stale or no feedback.
 
+## Legal Info
+
+SPDX-License-Identifier: BSD-3-Clause
+SPDX-FileCopyrightText: Z-Wave Alliance <https://z-wavealliance.org>
