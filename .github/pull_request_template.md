@@ -41,5 +41,5 @@
 - [ ] I have followed the [Contribution Guidelines][contribution-guidelines]
 - [ ] I agree to the [Developer Certificate of Origin][dco]
 
-[contribution-guidelines]: https://github.com/Z-Wave-Alliance/OSWG/blob/main/contribution_guidelines.md
+[contribution-guidelines]: https://github.com/Z-Wave-Alliance/OSWG/blob/main/CONTRIBUTING.md
 [dco]: https://github.com/Z-Wave-Alliance/OSWG/blob/main/developer_certificate_of_origin.md
