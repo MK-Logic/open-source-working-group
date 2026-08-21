@@ -199,7 +199,7 @@ prepended with a comment identifier that matches the format of the file.
 The file header must also contain a copyright statement in SPDX format.
 The default copyright statement that must be used is:
 ```
-SPDX-FileCopyrightText: Z-Wave-Alliance <https://z-wavealliance.org>
+SPDX-FileCopyrightText: Z-Wave Alliance <https://z-wavealliance.org>
 ```
 It is allowed to additionally add your company's original copyright to a new or changed file,
 but it is not recommended to do so, as it can result in a long file header with multiple copyright holders.
