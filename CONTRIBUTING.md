@@ -153,8 +153,12 @@ Supported commit types:
 - style
 - test
 
-Supported commit scopes might be found in CONTRIBUTING.md in each repository maintained by OSWG.
-If no scopes are defined in a repository, do not use a scope.
+Supported commit scopes:
+- deps (dependencies)
+
+In addition to the above generic supported commit scopes, supported commit scopes might
+be found in CONTRIBUTING.md in each repository maintained by OSWG.
+If no scopes are defined in a repository, limit the use of scope to the list above.
 
 Example based on https://github.com/Z-Wave-Alliance/z-wave-stack/pull/887:
 ```
