@@ -208,6 +208,25 @@ SPDX-FileCopyrightText: Z-Wave Alliance <https://z-wavealliance.org>
 It is allowed to additionally add your company's original copyright to a new or changed file,
 but it is not recommended to do so, as it can result in a long file header with multiple copyright holders.
 
+### Contributing Binary Assets
+
+Binary assets (prebuilt libraries, firmware images and similar files without buildable source code) are collected in the
+[z-wave-blobs](https://github.com/Z-Wave-Alliance/z-wave-blobs) repository, so that projects depend on it instead of
+duplicating the files. A pull request that adds a binary asset follows these rules:
+
+- One module per pull request. Several binaries of the same module for different architectures may go together.
+- A notice file accompanies the binaries, preferably a Markdown file matching the file name pattern of the asset. Give as
+  many details as possible: Why is the asset contributed as a binary and not as source code, and any hints on the context.
+  This helps further investigation.
+- A license file must be present. To the contributor's best knowledge, its legal terms align with the source code that
+  generated the asset or with the terms of a previous distribution of the asset.
+- Issues of high severity track the impact of the contribution and are cross-linked:
+  - One in the z-wave-blobs repository, requesting an alternative and the removal of the imported binary file.
+  - One in each project that consumes the asset, requesting the removal of this tainting dependency.
+  - The same applies recursively wherever the asset lands.
+- For finer tracking, the commit footer can carry an `Origin: <URL>` field, human and machine readable, for example
+  `Origin: https://{company}/#{project}/{revision}` when the source is not public.
+
 ### Upstream Sync and Clean Up
 
 Prior to submitting your pull request, you might want to do a few things to clean up your branch and make it as simple 
