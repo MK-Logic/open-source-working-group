@@ -214,6 +214,7 @@ Binary assets (prebuilt libraries, firmware images and similar files without bui
 [z-wave-blobs](https://github.com/Z-Wave-Alliance/z-wave-blobs) repository, so that projects depend on it instead of
 duplicating the files. A pull request that adds a binary asset follows these rules:
 
+- Only existing blobs can be replaced. No new blobs can be added. The goal is to get rid of the blobs long term.
 - One module per pull request. Several binaries of the same module for different architectures may go together.
 - A notice file accompanies the binaries, preferably a Markdown file matching the file name pattern of the asset. Give as
   many details as possible: Why is the asset contributed as a binary and not as source code, and any hints on the context.
