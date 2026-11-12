@@ -1,0 +1,20 @@
+# SPDX-License-Identifier: BSD-3-Clause
+# SPDX-FileCopyrightText: Z-Wave Alliance <https://z-wavealliance.org>
+
+# AI coding agents
+AGENTS.md
+
+# Claude Code
+.claude/
+CLAUDE.md
+
+# Cursor
+.cursor/
+.mcp.json
+
+# PyCharm
+*.idea
+
+# VS Code
+*.code-workspace
+.vscode/
